@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: konga-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: konga-ui
+  template:
+    metadata:
+      labels:
+        app: konga-ui
+    spec:
+      containers:
+      - image: pantsel/konga:0.14.9
+        name: konga-ui
+        ports:
+        - containerPort: 8989
