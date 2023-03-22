@@ -17,6 +17,8 @@ spec:
         value: konga
       - name: "global.postgresql.auth.password"
         value: konga
+      - name: "image.debug"
+        value: true
     chart: postgresql
   destination:
     server: 'https://kubernetes.default.svc'
