@@ -26,9 +26,11 @@ spec:
         - name: DB_DATABASE
           value: konga
         - name: DB_HOST
-          value: 10.103.128.141
+          value: 10.107.138.133
         - name: DB_PORT
           value: "5432"
         - name: DB_ADAPTER
           value: postgres
+        - name: "image.tag"
+          value: postgresql:11.19.0
   
