@@ -6,11 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://helm.elastic.co
-    targetRevision: 0.3.0
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 19.6.0
+    values:
+    - values.yaml
     helm:
       releaseName: eks
-    chart: eck-stack
+    chart: elasticsearch
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: fluentd
