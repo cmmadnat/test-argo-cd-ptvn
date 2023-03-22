@@ -29,4 +29,6 @@ spec:
         value: konga-postgresql
       - name: DB_PORT
         value: 5432
+      - name: DB_ADAPTER
+        value: postgres
   
