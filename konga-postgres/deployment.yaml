@@ -12,6 +12,10 @@ spec:
       releaseName: konga-postgresql
       valueFiles:
       - values.yaml
+      values:
+        auth.username: konga
+        auth.password: konga
+        auth.database: konga
     chart: postgresql
   destination:
     server: 'https://kubernetes.default.svc'
