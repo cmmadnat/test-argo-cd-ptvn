@@ -28,7 +28,7 @@ spec:
         - name: DB_HOST
           value: 10.103.128.141
         - name: DB_PORT
-          value: 5432
+          value: "5432"
         - name: DB_ADAPTER
           value: postgres
   
