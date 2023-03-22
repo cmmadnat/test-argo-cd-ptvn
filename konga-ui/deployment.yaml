@@ -17,4 +17,4 @@ spec:
       - image: pantsel/konga:0.14.9
         name: konga-ui
         ports:
-        - containerPort: 8989
+        - containerPort: 1337
