@@ -7,9 +7,9 @@ spec:
   project: default
   source:
     repoURL: https://kokuwaio.github.io/helm-charts
+    targetRevision: 13.9.0
     helm:
       releaseName: fluentd-elasticsearch
-      targetRevision: 13.9.0
     chart: fluentd-elasticsearch
   destination:
     server: 'https://kubernetes.default.svc'
