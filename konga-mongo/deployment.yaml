@@ -15,8 +15,7 @@ spec:
       - name: "auth.rootPassword"
         value: konga
       - name: "auth.databases"
-        value:
-        - konga
+        value: konga
   destination:
     server: "https://kubernetes.default.svc"
     namespace: kong
