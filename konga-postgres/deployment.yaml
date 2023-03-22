@@ -10,8 +10,13 @@ spec:
     targetRevision: 12.2.5
     helm:
       releaseName: konga-postgresql
-      valueFiles:
-      - values.yaml
+      parameters:
+      - name: "global.postgresql.auth.database"
+        value: konga
+      - name: "global.postgresql.auth.username"
+        value: konga
+      - name: "global.postgresql.auth.password"
+        value: konga
     chart: postgresql
   destination:
     server: 'https://kubernetes.default.svc'
