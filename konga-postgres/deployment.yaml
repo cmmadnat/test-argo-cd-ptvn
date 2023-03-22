@@ -19,6 +19,8 @@ spec:
         value: konga
       - name: "image.debug"
         value: "true"
+      - name: "image.tag"
+        value: 11.19.0
     chart: postgresql
   destination:
     server: 'https://kubernetes.default.svc'
