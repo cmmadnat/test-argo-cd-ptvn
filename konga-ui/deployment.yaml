@@ -32,5 +32,5 @@ spec:
         - name: DB_ADAPTER
           value: postgres
         - name: "image.tag"
-          value: postgresql:11.19.0
+          value: 11.19.0
   
